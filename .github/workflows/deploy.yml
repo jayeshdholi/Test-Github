@@ -3,7 +3,7 @@ name: GitOps HTML Deploy
 on:
   push:
     paths:
-      - 'config/index.html'
+      - 'Test-Github/index.html'
     branches:
       - main
 
@@ -18,5 +18,5 @@ jobs:
       - name: Simulate Deployment
         run: |
           echo "Deploying HTML file..."
-          cat config/index.html
+          cat Test-Github/index.html
           echo "✅ Deployment simulation complete!"
